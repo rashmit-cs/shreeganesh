@@ -85,16 +85,16 @@ var VEHICLES = {
   }
 };
 
-// Icon markup reused inside the modal header (mirrors the fleet card icons)
-var VEHICLE_ICONS = {
-  'sedan': '<svg viewBox="0 0 100 50" width="52" height="28"><path d="M8 36 L14 22 Q18 16 28 16 L62 16 Q70 16 74 22 L84 30 L92 32 L92 36 Z" fill="var(--gold)" stroke="var(--paper)" stroke-width="2"/><rect x="28" y="18" width="34" height="12" rx="2" fill="var(--ink)" stroke="var(--paper)" stroke-width="1.5"/><circle cx="26" cy="37" r="6" fill="var(--paper)"/><circle cx="76" cy="37" r="6" fill="var(--paper)"/></svg>',
-  'ertiga': '<svg viewBox="0 0 100 50" width="52" height="28"><path d="M6 36 L10 20 Q13 14 24 14 L68 14 Q78 14 82 20 L88 30 L92 32 L92 36 Z" fill="var(--gold)" stroke="var(--paper)" stroke-width="2"/><rect x="24" y="16" width="46" height="14" rx="2" fill="var(--ink)" stroke="var(--paper)" stroke-width="1.5"/><circle cx="24" cy="37" r="6" fill="var(--paper)"/><circle cx="76" cy="37" r="6" fill="var(--paper)"/></svg>',
-  'innova-crysta': '<svg viewBox="0 0 100 50" width="52" height="28"><path d="M6 36 L8 18 Q10 12 22 12 L70 12 Q80 12 84 18 L90 30 L92 33 L92 36 Z" fill="var(--gold)" stroke="var(--paper)" stroke-width="2"/><rect x="22" y="14" width="50" height="16" rx="2" fill="var(--ink)" stroke="var(--paper)" stroke-width="1.5"/><circle cx="24" cy="37" r="7" fill="var(--paper)"/><circle cx="78" cy="37" r="7" fill="var(--paper)"/></svg>',
-  'innova-hycross': '<svg viewBox="0 0 100 50" width="52" height="28"><path d="M6 36 L9 19 Q12 12 24 12 L68 12 Q79 13 84 19 L90 29 L92 33 L92 36 Z" fill="var(--gold)" stroke="var(--paper)" stroke-width="2"/><rect x="24" y="15" width="48" height="15" rx="4" fill="var(--ink)" stroke="var(--paper)" stroke-width="1.5"/><circle cx="25" cy="37" r="7" fill="var(--paper)"/><circle cx="77" cy="37" r="7" fill="var(--paper)"/></svg>',
-  'tempo-15': '<svg viewBox="0 0 100 50" width="52" height="28"><rect x="8" y="10" width="76" height="24" rx="3" fill="var(--gold)" stroke="var(--paper)" stroke-width="2"/><rect x="12" y="14" width="14" height="10" fill="var(--ink)" stroke="var(--paper)" stroke-width="1.2"/><rect x="30" y="14" width="14" height="10" fill="var(--ink)" stroke="var(--paper)" stroke-width="1.2"/><rect x="48" y="14" width="14" height="10" fill="var(--ink)" stroke="var(--paper)" stroke-width="1.2"/><rect x="66" y="14" width="14" height="10" fill="var(--ink)" stroke="var(--paper)" stroke-width="1.2"/><circle cx="24" cy="37" r="6" fill="var(--paper)"/><circle cx="70" cy="37" r="6" fill="var(--paper)"/></svg>',
-  'bus-26': '<svg viewBox="0 0 100 50" width="52" height="28"><rect x="4" y="8" width="88" height="26" rx="3" fill="var(--gold)" stroke="var(--paper)" stroke-width="2"/><rect x="8" y="12" width="11" height="9" fill="var(--ink)" stroke="var(--paper)" stroke-width="1"/><rect x="22" y="12" width="11" height="9" fill="var(--ink)" stroke="var(--paper)" stroke-width="1"/><rect x="36" y="12" width="11" height="9" fill="var(--ink)" stroke="var(--paper)" stroke-width="1"/><rect x="50" y="12" width="11" height="9" fill="var(--ink)" stroke="var(--paper)" stroke-width="1"/><circle cx="22" cy="37" r="6" fill="var(--paper)"/><circle cx="74" cy="37" r="6" fill="var(--paper)"/></svg>',
-  'bus-30': '<svg viewBox="0 0 100 50" width="52" height="28"><rect x="4" y="8" width="88" height="26" rx="3" fill="var(--gold)" stroke="var(--paper)" stroke-width="2"/><rect x="8" y="12" width="11" height="9" fill="var(--ink)" stroke="var(--paper)" stroke-width="1"/><rect x="22" y="12" width="11" height="9" fill="var(--ink)" stroke="var(--paper)" stroke-width="1"/><rect x="36" y="12" width="11" height="9" fill="var(--ink)" stroke="var(--paper)" stroke-width="1"/><rect x="50" y="12" width="11" height="9" fill="var(--ink)" stroke="var(--paper)" stroke-width="1"/><circle cx="22" cy="37" r="6" fill="var(--paper)"/><circle cx="74" cy="37" r="6" fill="var(--paper)"/></svg>',
-  'bus-40': '<svg viewBox="0 0 100 50" width="52" height="28"><rect x="2" y="8" width="92" height="26" rx="3" fill="var(--gold)" stroke="var(--paper)" stroke-width="2"/><rect x="6" y="12" width="9" height="9" fill="var(--ink)" stroke="var(--paper)" stroke-width="1"/><rect x="18" y="12" width="9" height="9" fill="var(--ink)" stroke="var(--paper)" stroke-width="1"/><rect x="30" y="12" width="9" height="9" fill="var(--ink)" stroke="var(--paper)" stroke-width="1"/><rect x="42" y="12" width="9" height="9" fill="var(--ink)" stroke="var(--paper)" stroke-width="1"/><circle cx="22" cy="37" r="6" fill="var(--paper)"/><circle cx="76" cy="37" r="6" fill="var(--paper)"/></svg>'
+// Image files used in the modal header (matches the fleet card banners)
+var VEHICLE_IMAGES = {
+  'sedan': 'images/vehicle-sedan.jpg',
+  'ertiga': 'images/vehicle-ertiga.jpg',
+  'innova-crysta': 'images/vehicle-innova-crysta.jpg',
+  'innova-hycross': 'images/vehicle-innova-hycross.jpg',
+  'tempo-15': 'images/vehicle-tempo-15.jpg',
+  'bus-26': 'images/vehicle-bus-26.jpg',
+  'bus-30': 'images/vehicle-bus-30.jpg',
+  'bus-40': 'images/vehicle-bus-40.jpg'
 };
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     modalName.textContent = v.name;
     modalTagline.textContent = v.tagline;
-    modalIcon.innerHTML = VEHICLE_ICONS[vehicleId] || '';
+    modalIcon.innerHTML = '<img src="' + (VEHICLE_IMAGES[vehicleId] || '') + '" alt="' + v.name + '" width="120" height="64">';
     modalBadges.innerHTML =
       '<span class="vbadge">' + (v.ac ? 'AC' : 'Non-AC') + '</span>' +
       '<span class="vbadge">' + v.seats + ' Seats</span>' +
