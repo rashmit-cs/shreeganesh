@@ -308,7 +308,8 @@ img, svg { display: block; }
   transition: box-shadow 0.15s, transform 0.15s;
 }
 .vehicle-card:hover { box-shadow: 6px 6px 0 var(--gold); transform: translate(-2px, -2px); }
-.vehicle-icon { display: block; margin-bottom: 6px; }
+.vehicle-icon { display: block; width: 100%; margin: -18px -18px 12px; }
+.vehicle-icon img { display: block; width: 100%; height: auto; border-bottom: 2px solid var(--ink); }
 .vehicle-name { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: var(--ink); }
 .vehicle-tagline { font-size: 12.5px; color: var(--ink2); opacity: 0.75; }
 .vehicle-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
@@ -359,7 +360,8 @@ img, svg { display: block; }
   line-height: 1;
 }
 .modal-head { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; padding-right: 40px; }
-.modal-icon { flex-shrink: 0; width: 64px; height: 40px; background: var(--ink); display: flex; align-items: center; justify-content: center; border: 2px solid var(--ink); }
+.modal-icon { flex-shrink: 0; width: 120px; border: 2px solid var(--ink); overflow: hidden; }
+.modal-icon img { display: block; width: 100%; height: auto; }
 .modal-head h3 { font-family: var(--font-display); font-weight: 700; font-size: 1.3rem; margin: 0 0 2px; color: var(--ink); }
 .modal-tagline { font-size: 13px; color: var(--ink2); opacity: 0.75; margin: 0 0 6px; }
 
@@ -463,6 +465,8 @@ img, svg { display: block; }
   flex-direction: column;
   gap: 10px;
 }
+.tour-card-image { margin: -20px -20px 4px; }
+.tour-card-image img { display: block; width: 100%; height: auto; border-bottom: 2px solid var(--ink); }
 .tour-card.featured { box-shadow: 6px 6px 0 var(--gold); }
 .tour-card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
 .tour-card-top h3 { font-family: var(--font-display); font-weight: 700; font-size: 1.05rem; margin: 0; color: var(--ink); }
