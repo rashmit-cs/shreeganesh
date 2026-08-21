@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.shreeganeshtoursandtravels.com/sitemap.xml
